@@ -45,7 +45,8 @@ const (
 	topUsersLimit      = 10
 	amountToleranceCNY = 0.01
 
-	orderIDPrefix = "sub2_"
+	//orderIDPrefix = "sub2_"
+	orderIDPrefix = "illmhub_"
 )
 
 const paymentResumeSigningKeyEnv = "PAYMENT_RESUME_SIGNING_KEY"
