@@ -25,7 +25,6 @@ export const useAppStore = defineStore('app', () => {
   // Public settings cache state
   const publicSettingsLoaded = ref<boolean>(false)
   const publicSettingsLoading = ref<boolean>(false)
-  //const siteName = ref<string>('Sub2API')
   const siteName = ref<string>('iLLMHub')
   const siteLogo = ref<string>('')
   const siteVersion = ref<string>('')
@@ -293,7 +292,6 @@ export const useAppStore = defineStore('app', () => {
       window.__APP_CONFIG__ = { ...config }
     }
     cachedPublicSettings.value = config
-    //siteName.value = config.site_name || 'Sub2API'
     siteName.value = config.site_name || 'iLLMHub'
     siteLogo.value = config.site_logo || ''
     siteVersion.value = config.version || ''
