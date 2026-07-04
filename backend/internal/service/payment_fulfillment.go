@@ -37,7 +37,7 @@ func (s *PaymentService) HandlePaymentNotification(ctx context.Context, n *payme
 	// Look up order by out_trade_no (the external order ID we sent to the provider)
 	order, err := s.entClient.PaymentOrder.Query().Where(paymentorder.OutTradeNo(n.OrderID)).Only(ctx)
 	if err != nil {
-		// Fallback only for true legacy "sub2_N" DB-ID payloads when the
+		// Fallback only for true legacy "illmhub_N" DB-ID payloads when the
 		// current out_trade_no lookup genuinely did not find an order.
 		if oid, ok := parseLegacyPaymentOrderID(n.OrderID, err); ok {
 			return s.confirmPayment(ctx, oid, n.TradeNo, n.Amount, pk, n.Metadata)
