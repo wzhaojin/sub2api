@@ -1,0 +1,129 @@
+<svg width="960" height="960" viewBox="0 0 960 960" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#33ccff"/>
+      <stop offset="100%" stop-color="#9933ff"/>
+    </linearGradient>
+
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#40c8ff"/>
+      <stop offset="100%" stop-color="#b84cff"/>
+    </linearGradient>
+
+    <linearGradient id="reflectionGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#33ccff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#9933ff" stop-opacity="0.02"/>
+    </linearGradient>
+
+    <filter id="glowNeon" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="lightGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <mask id="iMask">
+      <rect x="0" y="0" width="960" height="960" fill="#000"/>
+      <circle cx="480" cy="160" r="72" fill="#fff"/>
+      <rect x="400" y="260" width="160" height="400" rx="20" fill="#fff"/>
+    </mask>
+  </defs>
+
+  <!-- 深色背景 -->
+  <rect width="960" height="960" fill="#080a12"/>
+
+  <!-- 背景暗线纹理 -->
+  <g opacity="0.15" stroke="#30b8ff" stroke-width="1">
+    <path d="M20 120 L940 220 M10 260 L950 360 M30 400 L930 500 M0 540 L960 640"/>
+    <path d="M120 80 L220 940 M260 70 L360 950 M400 90 L500 930 M540 60 L640 960"/>
+  </g>
+
+  <!-- 外圈图标 -->
+  <g filter="url(#lightGlow)">
+    <circle cx="665" cy="210" r="44" fill="#090c16" stroke="url(#lineGrad)" stroke-width="3"/>
+    <path d="M640 218 L652 206 L668 222 L682 212" stroke="#66e0ff" stroke-width="2.5" fill="none"/>
+  </g>
+
+  <g filter="url(#lightGlow)">
+    <circle cx="750" cy="320" r="44" fill="#090c16" stroke="url(#lineGrad)" stroke-width="3"/>
+    <rect x="726" y="300" width="48" height="40" fill="none" stroke="#66e0ff" stroke-width="2"/>
+    <line x1="730" y1="312" x2="770" y2="312" stroke="#66e0ff" stroke-width="1.8"/>
+    <line x1="730" y1="324" x2="770" y2="324" stroke="#66e0ff" stroke-width="1.8"/>
+    <line x1="730" y1="336" x2="770" y2="336" stroke="#66e0ff" stroke-width="1.8"/>
+  </g>
+
+  <g filter="url(#lightGlow)">
+    <circle cx="750" cy="560" r="44" fill="#090c16" stroke="url(#lineGrad)" stroke-width="3"/>
+    <path d="M728 540 L750 524 L772 540 L772 568 Q750 584 728 568 Z" fill="none" stroke="#66e0ff" stroke-width="2.2"/>
+  </g>
+
+  <g filter="url(#lightGlow)">
+    <circle cx="665" cy="670" r="44" fill="#090c16" stroke="url(#lineGrad)" stroke-width="3"/>
+    <circle cx="665" cy="670" r="10" fill="#66e0ff"/>
+    <circle cx="652" cy="657" r="4" fill="#9933ff"/>
+    <circle cx="678" cy="683" r="4" fill="#9933ff"/>
+  </g>
+
+  <g filter="url(#lightGlow)">
+    <circle cx="295" cy="670" r="44" fill="#090c16" stroke="url(#lineGrad)" stroke-width="3"/>
+    <rect x="272" y="648" width="46" height="46" fill="none" stroke="#66e0ff" stroke-width="2"/>
+    <path d="M286 671 L304 653 L304 665 L320 665 L320 677 L304 677 L304 689 Z" fill="#66e0ff"/>
+  </g>
+
+  <g filter="url(#lightGlow)">
+    <circle cx="210" cy="560" r="44" fill="#090c16" stroke="url(#lineGrad)" stroke-width="3"/>
+    <circle cx="210" cy="560" r="18" fill="none" stroke="#66e0ff" stroke-width="2"/>
+    <path d="M210 538 L210 528 M210 592 L210 602 M188 560 L178 560 M232 560 L242 560 M194 544 L186 536 M226 576 L234 584 M194 576 L186 584 M226 544 L234 536" stroke="#66e0ff" stroke-width="2"/>
+  </g>
+
+  <g filter="url(#lightGlow)">
+    <circle cx="210" cy="320" r="44" fill="#090c16" stroke="url(#lineGrad)" stroke-width="3"/>
+    <circle cx="210" cy="320" r="17" fill="none" stroke="#66e0ff" stroke-width="2"/>
+    <path d="M210 298 L210 288 M210 342 L210 352 M188 320 L178 320 M232 320 L242 320" stroke="#66e0ff" stroke-width="2"/>
+  </g>
+
+  <g filter="url(#lightGlow)">
+    <circle cx="295" cy="210" r="44" fill="#090c16" stroke="url(#lineGrad)" stroke-width="3"/>
+    <rect x="280" y="224" width="7" height="14" fill="#66e0ff"/>
+    <rect x="292" y="214" width="7" height="24" fill="#66e0ff"/>
+    <rect x="304" y="206" width="7" height="32" fill="#66e0ff"/>
+  </g>
+
+  <!-- 外圈辅助小圆点 -->
+  <circle cx="382" cy="172" r="9" fill="#40c8ff" filter="url(#lightGlow)"/>
+  <circle cx="578" cy="172" r="9" fill="#40c8ff" filter="url(#lightGlow)"/>
+  <circle cx="778" cy="450" r="9" fill="#b84cff" filter="url(#lightGlow)"/>
+  <circle cx="578" cy="728" r="9" fill="#40c8ff" filter="url(#lightGlow)"/>
+  <circle cx="382" cy="728" r="9" fill="#40c8ff" filter="url(#lightGlow)"/>
+  <circle cx="182" cy="450" r="9" fill="#b84cff" filter="url(#lightGlow)"/>
+
+  <!-- 放射线：只连到图标圆圈边缘，被 i 字母区域遮挡 -->
+  <g stroke="url(#lineGrad)" stroke-width="1.7" opacity="0.65" mask="url(#iMask)">
+    <line x1="480" y1="232" x2="636" y2="224"/>
+    <line x1="480" y1="280" x2="718" y2="306"/>
+    <line x1="480" y1="420" x2="718" y2="554"/>
+    <line x1="480" y1="520" x2="636" y2="646"/>
+    <line x1="480" y1="520" x2="324" y2="646"/>
+    <line x1="480" y1="420" x2="242" y2="554"/>
+    <line x1="480" y1="280" x2="242" y2="306"/>
+    <line x1="480" y1="232" x2="324" y2="224"/>
+    <line x1="480" y1="222" x2="480" y2="232"/>
+  </g>
+
+  <!-- 中心 i 字母 -->
+  <g filter="url(#glowNeon)">
+    <circle cx="480" cy="160" r="62" fill="url(#mainGrad)"/>
+    <rect x="410" y="270" width="140" height="370" rx="18" fill="url(#mainGrad)"/>
+  </g>
+
+  <!-- 底部品牌文字：下移、加宽字距、整体宽度对齐外圈边缘 -->
+  <text x="480" y="860" font-family="Arial Black,sans-serif" font-size="104" font-weight="900" letter-spacing="12" text-anchor="middle" fill="url(#mainGrad)" filter="url(#glowNeon)">iLLMHub</text>
+
+  <!-- 底部镜面反光：同步下移并淡化 -->
+  <g transform="translate(0, 1720) scale(1, -1)">
+    <text x="480" y="860" font-family="Arial Black,sans-serif" font-size="104" font-weight="900" letter-spacing="12" text-anchor="middle" fill="url(#reflectionGrad)" filter="url(#lightGlow)" opacity="0.12">iLLMHub</text>
+  </g>
+</svg>
